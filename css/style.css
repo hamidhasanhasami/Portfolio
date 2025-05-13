@@ -20,7 +20,7 @@ li{list-style: none;}
 header{background: var(--main-color); padding: 10px 0; position: fixed; width: 100%; top: 0; z-index: 1;}
 header .icon{position: absolute; right: 1rem; top: 1rem; display: none;}
 header .icon i{color: var(--bg-color); font-size: 2rem; font-weight: 400;}
-header nav ul.flex .close-icon i{font-size: 3rem; position: absolute; right: 1rem; top: -1rem; color: black; font-weight: 700;}
+header nav ul.flex .close-icon i{font-size: 3rem; position: absolute; right: 1rem; top: 2rem; color: black; font-weight: 700;}
 header nav ul.flex .close-icon {position: relative; display: none;}
 
 /* nav .row.navbaar{margin-top: 2rem;} */
@@ -122,14 +122,16 @@ main .container .main_content_span{color: var(--main-color);}
 
 /* Contact code */
 .wrap-4{background: var(--bg-color);}
+.wrap-4 .contact-me{display: flex; justify-content: center;}
 .wrap-4 .contact-me h3{margin-bottom: 3rem; color: var(--main-color); font-size: 4rem;}
-.wrap-4 form{max-width:70rem; margin: 1rem auto; text-align: center; margin-bottom: 2rem;}
+/* .wrap-4 form{max-width:70rem; margin: 1rem auto; text-align: center; margin-bottom: 2rem;} */
 .wrap-4 form .input-box{display: flex; justify-content: center;} 
 
 .wrap-4 form .input-box input, .wrap-4 form textarea{width: 100%; padding: .7rem; font-size: 1.6rem;color: var(--text-color); background: var(--bg-color); background-repeat: 0.8rem; border: 0.25rem solid var(--main-color); margin: 0.7rem 0; resize: none;border-radius: 15px; } 
 .wrap-4 form .input-box input{width: 49%; margin: 0.7rem 0.35rem; border-radius: 20px;}
 .wrap-4 form .input-box input::placeholder{font-size: 1.3rem;}
-.wrap-4 form .btn{display: inline-block; color: var(--bg-color); font-size: 1.6rem; background: var(--main-color); padding: 1rem 2.8rem; border-radius:4rem; letter-spacing: 0.1rem; font-weight: 600; transition: 0.3s ease; margin-top: 2rem;}
+.wrap-4 form .send-msg-btn{display: flex; justify-content: center;}
+.wrap-4 form .btn{display: inline-block;  color: var(--bg-color); font-size: 1.6rem; background: var(--main-color); padding: 1rem 2.8rem; border-radius:4rem; letter-spacing: 0.1rem; font-weight: 600; transition: 0.3s ease; margin-top:2rem}
 .wrap-4 form .btn:hover{box-shadow:0 0 1.6rem var(--main-color);}
 
 /* Footer Section */
@@ -162,6 +164,8 @@ footer p{font-size: 2rem; margin: 1rem auto;}
 
   nav ul.flex{display: none;}
   nav .navbaar .navbaar-icon .icon{display: block;}
+  .wrap-project img{width: 365px; height: 250px;}
+
 
   header nav ul.flex{
     position: absolute;
@@ -193,7 +197,9 @@ header nav ul.flex .close-icon {display:block;}
 }
 
 
-@media screen and (max-width:768px) {
+
+
+@media screen and (max-width:980px) {
   .col-t-1{grid-column: span 1;}
   .col-t-2{grid-column: span 2;}
   .col-t-3{grid-column: span 3;}
@@ -208,6 +214,7 @@ header nav ul.flex .close-icon {display:block;}
   .col-t-12{grid-column: span 12;}
   
   header ul.flex{display: none;}
+  .wrap-project img{width: 95%; height: 250px;}
   header .navbaar-icon .icon{top: 1rem; right: 1rem; display: block;}
   .wrap-1 .main_content{margin-top: 5rem;}
   footer .footer-p p{font-size: 1.5rem;}
@@ -263,6 +270,9 @@ header nav ul.flex .close-icon {display:block;}
 
 
   nav .navbaar .navbaar-icon .icon{display: block;}
+  header .icon i{position: relative; top: 1.1rem;}
+
+
   header nav ul.flex{
     position: absolute;
     top: 100%;
@@ -285,15 +295,30 @@ header nav ul.flex .close-icon {display:block;}
     margin: 1rem 1rem;
    
   }
+  /* img{margin-right: 1rem;} */
+  /* .service-container, .input-box{margin-right: -4rem;}
+   */
+   /* .service-container-box{display: flex; justify-content: center;} */
+  /* .wrap-4 form .input-box input, .wrap-4 form textarea{margin: 1rem 2rem;} */
 
   header nav ul.flex.active{right: 0;}
 
-header nav ul.flex .close-icon {display:block;}
+  header nav ul.flex .close-icon {display:block;}
 
 
   .wrap-2 .second-section-first-column{margin-top: 2rem; margin-bottom: 5rem;}
   .wrap-2 .second-section-first-column h2{ font-size: 4rem;}
   footer p{font-size: 1.3rem;}
+}
+
+@media screen and (max-width:391px) {
+  footer{background: var(--snd-bg-color); margin-top: 3rem; width: 100%; height: auto;}
+  /* header .icon i{position: relative; right: 3rem} */
+  .wrap-project img{width: 340px; height: 250px;}
+  footer .container .footer-p p{font-size: 1.3rem;}
+
+
+  
 }
 
 
